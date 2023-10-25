@@ -12,3 +12,5 @@ except ClientError:
             print('The specified bucket does not exist.')
     else:
         print('An error occured:', e)
+
+s3.delete_object(Bucket='my-boto3-bucket-lola', Key='fried/bucket-chicken.webp')
